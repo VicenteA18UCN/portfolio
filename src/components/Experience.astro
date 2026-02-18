@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Agosto 2025 – Diciembre 2025",
+    title: "Analista de Datos (Memorista)",
+    company: "CODELCO – División Gabriela Mistral",
+    location: "Sierra Gorda, Chile",
+    description:
+      "Optimicé consultas y estructuras en SQL Server para mejorar rendimiento y completitud de reportes; desarrollé un reporte estratégico en Power BI (plan mensual vs real) con árbol de valor de KPI; y construí/automaticé pipelines ETL en Python para generar datasets consistentes para seguimiento del rendimiento mina.",
+  },
+  {
+    date: "Abril 2024 – Julio 2025",
+    title: "Desarrollador Full-Stack",
+    company: "Metric Studio SpA",
+    location: "Antofagasta, Chile",
+    description:
+      "Levanté y formalicé requerimientos (ERS) e implementé PointMaster Learning con React + NestJS con validación mediante pruebas de usuario; participé en Routi (Next.js + Supabase); y apoyé refactor de modelos MySQL y mejoras de arquitectura con despliegue en GCP (Cloud Run + Docker).",
+  },
+  {
+    date: "Marzo 2025 – Junio 2025",
+    title: "Docente (Arquitectura de Sistemas)",
+    company: "Universidad Católica del Norte",
+    location: "Antofagasta, Chile",
+    description:
+      "Dicté clases y guié aprendizaje práctico utilizando Express.js, Docker, Jest, RabbitMQ y GitHub Actions.",
+  },
+  {
+    date: "Enero 2025 – Mayo 2025",
+    title: "Desarrollador Full-Stack",
+    company: "Thermosolutions",
+    location: "Antofagasta, Chile",
+    description:
+      "Refactoricé frontend y backend con Vue + NestJS para ThermoShield BHP.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
