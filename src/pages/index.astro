@@ -9,6 +9,8 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro";
 import AboutMe from "@/components/AboutMe.astro";
 import Briefcase from "@/components/icons/Briefcase.astro";
 import Experience from "@/components/Experience.astro";
+import Skills from "@/components/Skills.astro";
+import CodeComputer from "@/components/icons/CodeComputer.astro";
 ---
 
 <Layout
@@ -19,7 +21,15 @@ import Experience from "@/components/Experience.astro";
     <SectionContainer class="py-16 md:py-36">
       <Hero />
     </SectionContainer>
+
     <div class="space-y-24">
+      <SectionContainer id="tecnologías">
+        <TitleSection>
+          <CodeComputer class="size-7" />
+          Tecnologías
+        </TitleSection>
+        <Skills />
+      </SectionContainer>
       <SectionContainer id="experiencia">
         <TitleSection>
           <Briefcase class="size-8" /> Experiencia laboral
