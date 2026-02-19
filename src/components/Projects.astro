@@ -5,8 +5,7 @@ import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 import Supabase from "./icons/Supabase.astro";
-import routi from "@/assets/projects/routi.webp";
-import metricstudio from "@/assets/projects/metricstudio.webp";
+const base = import.meta.env.BASE_URL;
 
 const TAGS = {
   NEXT: {
@@ -31,7 +30,7 @@ const PROJECTS = [
     description:
       "CRM para equipos de ventas en terreno. Permite gestionar clientes, oportunidades y rutas de visita. Creado con Next.js, Tailwind CSS y Supabase.",
     link: "https://routi.metricstudio.cl/",
-    image: routi,
+    image: base + "/portfolio/projects/routi.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.SUPABASE],
   },
   {
@@ -39,7 +38,7 @@ const PROJECTS = [
     description:
       "Landing page para Metric Studio, consultora de TI. Desarrollada con Next.js y Tailwind CSS, enfocada en conversión y experiencia de usuario.",
     link: "https://metricstudio.cl",
-    image: metricstudio,
+    image: base + "/portfolio/projects/metricstudio.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ];
@@ -55,7 +54,7 @@ const PROJECTS = [
               alt="Recién llegado vs 5 años en Nueva Zelanda"
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
-              src={image.src}
+              src={image}
             />
           </div>
         </div>
