@@ -9,8 +9,9 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro";
 import AboutMe from "@/components/AboutMe.astro";
 import Briefcase from "@/components/icons/Briefcase.astro";
 import Experience from "@/components/Experience.astro";
-import Skills from "@/components/Skills.astro";
+
 import CodeComputer from "@/components/icons/CodeComputer.astro";
+import LogoWall from "@/components/LogoWall.astro";
 ---
 
 <Layout
@@ -18,18 +19,20 @@ import CodeComputer from "@/components/icons/CodeComputer.astro";
   description="Portafolio de Vicente Alarcón, Ingeniero Civil en Computación e Informática. Experiencia en desarrollo full-stack, análisis de datos y docencia. Proyectos destacados incluyen CRM para ventas en terreno y landing page para consultora de TI."
 >
   <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
+    <SectionContainer class="py-16 md:py-36 space-y-10">
       <Hero />
+      <LogoWall />
     </SectionContainer>
 
     <div class="space-y-24">
-      <SectionContainer id="tecnologías">
+      <!-- <SectionContainer id="tecnologias">
         <TitleSection>
           <CodeComputer class="size-7" />
           Tecnologías
         </TitleSection>
-        <Skills />
-      </SectionContainer>
+        <Technology />
+      </SectionContainer> -->
+
       <SectionContainer id="experiencia">
         <TitleSection>
           <Briefcase class="size-8" /> Experiencia laboral

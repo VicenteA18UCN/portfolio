@@ -5,12 +5,13 @@ import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
 import vicenteImage from "@/assets/vicente-alarcon.webp";
+import LogoWall from "./LogoWall.astro";
 ---
 
 <div class="md:grid md:grid-cols-2 max-w-7xl">
   <div class="gap-4">
     <h1
-      class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+      class="text-center text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
     >
       Hola, soy Vicente Alarcón
     </h1>
@@ -22,7 +23,9 @@ import vicenteImage from "@/assets/vicente-alarcon.webp";
       Chile 🇨🇱. Especializado en <strong>React/Next.js</strong> +{" "}
       <strong>Node/TypeScript</strong>, e integración de sistemas y datos.
     </p>
-    <nav class="flex flex-wrap gap-4 mt-8">
+    <nav
+      class="flex flex-wrap gap-4 mt-8 items-center justify-center md:justify-start"
+    >
       <SocialPill href="mailto:vicente.i.alarcon@gmail.com">
         <MailIcon class="size-4" />
         Contáctame
